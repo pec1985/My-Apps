@@ -11,7 +11,6 @@ var developerName='';
 
 var devName=developerName.replace(/ /gi, '+').toLowerCase();
 var itunesInfo = 'http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term='+devName+'&entity=software';
-//var itunesInfo = 'http://iad.pec1985.com/wsSearch.json';
 xhr = Titanium.Network.createHTTPClient();
 xhr.setTimeout(20000);
 xhr.onload = function(){
